@@ -261,20 +261,20 @@ class Client(User):
         )
         return json
     
-    # async def edit_hypesquad(self, house: int | Literal["bravery", "brilliance", "balance"]):
-    #     match house:
-    #         case "bravery":
-    #             house = 1
-    #         case "brilliance":
-    #             house = 2
-    #         case "balance":
-    #             house = 3
-    #         case _:
-    #             raise ValueError("Invalid house")
+    async def edit_hypesquad(self, house: int | Literal["bravery", "brilliance", "balance"]):
+        match house:
+            case "bravery":
+                house = 1
+            case "brilliance":
+                house = 2
+            case "balance":
+                house = 3
+            case _:
+                raise ValueError("Invalid house")
             
-        # await self.http.request(
-        #     "post", "/hypesquad/online", json={"house_id": house}
-        # )
+        await self.http.request(
+            "post", "/hypesquad/online", json={"house_id": house}
+        )
                                                
                                                
     
