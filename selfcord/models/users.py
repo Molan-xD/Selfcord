@@ -272,9 +272,9 @@ class Client(User):
     #         case _:
     #             raise ValueError("Invalid house")
             
-        await self.http.request(
-            "post", "/hypesquad/online", json={"house_id": house}
-        )
+        # await self.http.request(
+        #     "post", "/hypesquad/online", json={"house_id": house}
+        # )
                                                
                                                
     
