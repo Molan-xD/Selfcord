@@ -37,7 +37,7 @@ if __name__ == "__main__":
             "uvloop==0.17.0"
         ] if sys.platform == "linux" else 
         [
-            "aiohttp==3.8.5",
+            "aiohttp==3.10.0",
             "aioconsole==0.3.3",
             "websockets==10.1",
             "ujson==5.7.0",
